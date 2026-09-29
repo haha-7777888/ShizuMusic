@@ -148,7 +148,7 @@ async def speedtest_cmd(client, message: Message) -> None:
             ("ᴅᴏᴡɴʟᴏᴀᴅ", f"<code>{download:.2f} Mbps</code>"),
             ("ᴜᴘʟᴏᴀᴅ", f"<code>{upload:.2f} Mbps</code>"),
         ], headers=["sᴘᴇᴇᴅ", ""])
-        + f"<p>❍ ʙʏ » <a href=\"{config.SUPPORT_GROUP}\">sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></p>"
+        + f"<p>❍ ʙʏ » <a href=\"{config.SUPPORT_GROUP}\">ᴍᴜsɪᴄ™</a></p>"
     )
 
     try:
