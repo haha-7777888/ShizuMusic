@@ -116,7 +116,7 @@ async def start_handler(_, message: Message) -> None:
                                      url=f"tg://user?id={config.OWNER_ID}",
                                      style=enums.ButtonStyle.DEFAULT),
                 InlineKeyboardButton("🍡 sᴏᴜʀᴄᴇ 🍡",
-                                     url="https://github.com/Badmunda05/ShizuMusic/fork",
+                                     url="https://t.me/myanmarbot_music",
                                      style=enums.ButtonStyle.DEFAULT),
             ],
         ])
@@ -267,7 +267,7 @@ async def help_handler(_, message: Message) -> None:
                 ),
                 open=True,
             )
-        + rich_note(f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a>")
+        + rich_note(f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='https://t.me/myanmarbot_music/53'>clone-ᴍᴜsɪᴄ™</a>")
         + _support_updates_pills()
     )
 
