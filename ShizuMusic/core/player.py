@@ -89,7 +89,7 @@ def _now_playing_content(song: dict) -> str:
 
     return (
         rich_heading(
-            "🎧 sʜɪᴢᴜ ᴍᴜsɪᴄ — ɴᴏᴡ ᴘʟᴀʏɪɴɢ",
+            "🎧 ɴᴏᴡ ᴘʟᴀʏɪɴɢ",
             level=3
         )
         + (rich_img(thumb) if thumb else "")
@@ -457,7 +457,7 @@ async def play_song(
     if config.LOGGER_ID:
         logger_content = (
             rich_heading(
-                "🎧 #ɴᴏᴡᴘʟᴀʏɪɴɢ",
+                "🎧 ɴᴏᴡ ᴘʟᴀʏɪɴɢ",
                 level=3
             )
             + rich_kv_table([
