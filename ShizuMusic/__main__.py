@@ -38,7 +38,7 @@ _flask = Flask(__name__)
 
 @_flask.route("/")
 def _home():
-    return "❍ ꜱʜɪᴢᴜᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ ᴍᴀᴅᴇ ʙʏ ʙᴀᴅᴍᴜɴᴅᴀ 💕", 200
+    return "❍ ᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ  💕", 200
 
 
 @_flask.route("/health")
@@ -73,7 +73,7 @@ async def _notify_owner(me, assistant_username: str) -> None:
     try:
         content = (
             rich_heading(
-                "🎵 ꜱʜɪᴢᴜᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ 💕",
+                "🎵ᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ 💕",
                 level=3
             )
             + rich_kv_table([
@@ -159,7 +159,6 @@ if __name__ == "__main__":
             BotCommand("skip",   "✧ sᴋɪᴘ sᴏɴɢ ✧"),
             BotCommand("stop",   "✧ sᴛᴏᴘ & ᴄʟᴇᴀʀ ✧"),
             BotCommand("ping",   "✧ ʙᴏᴛ sᴛᴀᴛs ✧"),
-            BotCommand("repo",   "✧ sᴏᴜʀᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ ✧"),
         ])
         LOGGER.info("Bot commands set")
     except Exception as e:
@@ -207,7 +206,7 @@ if __name__ == "__main__":
     loop.create_task(watchdog())
     LOGGER.info("Watchdog started")
 
-    LOGGER.info("ShizuMusic is running")
+    LOGGER.info("Music is running")
 
     idle()
 
@@ -222,5 +221,5 @@ if __name__ == "__main__":
     except Exception:
         pass
 
-    LOGGER.info("✧ ShizuMusic stopped ✧")
+    LOGGER.info("✧ Music stopped ✧")
             
